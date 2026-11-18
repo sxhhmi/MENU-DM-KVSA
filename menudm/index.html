@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a1524">
+<title>MENU DM KVSA</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="LOGOKV.PNG" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="brand"><span></span>Dewan Makan Kolej Vokasional Shah Alam</div>
+<div class="acts"><button class="tbtn" id="sbtn" type="button">Cari hidangan<kbd>/</kbd></button><span class="acts" id="au"></span></div></div></header>
+<section class="hero" id="hari"><div class="wrap" id="hd"></div></section>
+<main class="wrap">
+<section class="sec"><div class="top2"><div><h2>Hidangan</h2><p class="sub" id="sb"></p></div><button class="tbtn alt" id="share" type="button">Kongsi menu</button></div><div class="tl" id="tl"></div></section>
+<section class="sec"><div class="top2"><div><h2>Kalori</h2><p class="sub" id="ksub"></p></div><div class="tabs" role="tablist"></div></div><div class="pan"><div id="dn"></div><div id="br"></div></div></section>
+<section class="sec" id="minggu"><div class="top2"><h2>Menu seminggu</h2><div class="tabs" role="tablist"></div></div>
+<div class="chips" id="chips" role="group" aria-label="Tapis ikut lauk"></div><p class="sub" id="fc"></p>
+<div class="sc" tabindex="0" role="region" aria-label="Jadual menu mingguan"><table id="tb"></table></div></section>
+<div class="fo">Air kosong (250ml) disediakan bersama setiap hidangan tengah hari dan malam. Kalori mengikut jadual rasmi BMB-CeP. Pintasan papan kekunci: anak panah kiri atau kanan tukar hari, T ke hari ini dan / cari hidangan.</div>
+</main>
+<dialog id="srch" aria-label="Cari hidangan"><input id="q" type="search" placeholder="Cari hidangan, contoh: ayam goreng" autocomplete="off"><ul id="rs"></ul><p class="hint">Anak panah untuk pilih, Enter untuk buka, Esc untuk tutup</p></dialog>
+<dialog id="lgd" aria-label="Log masuk"><form id="lgf" class="frm"><h3>Log masuk pentadbir</h3><p class="hint0">Pelajar tidak perlu log masuk untuk melihat menu.</p><label>Nama pengguna<input id="lu" autocomplete="username" required></label><label>Kata laluan<input id="lp" type="password" autocomplete="current-password" required></label><p class="err" id="le" role="alert"></p><div class="row"><button type="button" class="tbtn alt" data-close>Batal</button><button class="tbtn pri">Log masuk</button></div></form></dialog>
+<dialog id="edd" aria-label="Ubah hidangan"><form id="edf" class="frm"><h3 id="edt"></h3><label>Hidangan (satu hidangan setiap baris)<textarea id="edi" rows="8"></textarea></label><label>Kalori (kcal)<input id="edk" type="number" min="0" max="3000" required></label><p class="err" id="ede" role="alert"></p><div class="row"><button type="button" class="tbtn alt" data-close>Batal</button><button class="tbtn pri">Simpan</button></div></form></dialog>
+<dialog id="pnd" aria-label="Pengurusan"><div class="frm" id="pnb"></div></dialog>
+<div class="toast" id="ts" role="status"></div>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/search.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
